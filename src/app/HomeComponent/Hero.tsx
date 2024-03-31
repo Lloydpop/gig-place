@@ -17,7 +17,7 @@ const Hero = () => {
             {` Join our vibrant community today and elevate your career to new
             heights. With intuitive tools and a user-friendly interface, finding
             your dream job has never been easier. Get ready to embark on a
-            transformative career path with Gig Place!"`}
+            transformative career path with Gig Place!`}
           </p>
           <div className=" flex  items-center gap-7">
             <Button>
