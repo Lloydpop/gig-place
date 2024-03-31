@@ -14,7 +14,7 @@ export const Footer = () => {
           <Logo />
           <div className="w-[180px] text-black">
             <Button>
-              Download <Image alt="arrow" src={ArrowDown} className="w-5 h-5" />
+              Download <Image alt="arrow" src={ArrowDown} className="w-4 h-4" />
             </Button>
           </div>
         </div>
