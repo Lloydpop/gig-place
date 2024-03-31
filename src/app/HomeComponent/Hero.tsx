@@ -1,7 +1,7 @@
 import Image from "next/image";
 import workers from "../../../public/img/pointing.png";
 import Button from "../components/Form/Button/Button";
-import { ArrowDown3 } from "iconsax-react";
+import ArrowDown from "../../../public/img/download.png";
 const Hero = () => {
   return (
     <div>
@@ -21,7 +21,7 @@ const Hero = () => {
           </p>
           <div className=" flex  items-center gap-7">
             <Button>
-              Download <ArrowDown3 variant="Bold" />
+              Download <Image alt="arrow" src={ArrowDown} className="w-5 h-5" />
             </Button>
           </div>
         </div>

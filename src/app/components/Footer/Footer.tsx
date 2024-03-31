@@ -1,10 +1,10 @@
-import { ArrowDown3 } from "iconsax-react";
 import Button from "../Form/Button/Button";
 import Logo from "../Logo/Logo";
 import Image from "next/image";
 import facebook from "../../../../public/img/facebook.png";
 import link from "../../../../public/img/link.png";
 import insta from "../../../../public/img/insta.png";
+import ArrowDown from "../../../../public/img/download.png";
 export const Footer = () => {
   const year = new Date().getFullYear();
   return (
@@ -14,7 +14,7 @@ export const Footer = () => {
           <Logo />
           <div className="w-[180px] text-black">
             <Button>
-              Download <ArrowDown3 variant="Bold" />
+              Download <Image alt="arrow" src={ArrowDown} className="w-5 h-5" />
             </Button>
           </div>
         </div>
