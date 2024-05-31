@@ -8,61 +8,81 @@ import ArrowDown from "../../../../public/img/download.png";
 export const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="bg-primary px-20 pt-20 pb-7 -mt-[10px] text-white">
-      <div className="flex  justify-evenly gap-6">
-        <div className="col-span-3 space-y-10">
+    <footer className="bg-primary lg:px-20 px-8 pt-20 pb-7 -mt-[10px] text-white">
+      <div className="flex lg:flex-row flex-col  lg:justify-evenly gap-6">
+        <div className="col-span-3 lg:space-y-10 space-y-6">
           <Logo />
-          <div className="w-[180px] text-black">
+          <div className="w-[250px] text-black">
             <Button>
-              Download <Image alt="arrow" src={ArrowDown} className="w-4 h-4" />
+              Get App Today{" "}
+              <Image alt="arrow" src={ArrowDown} className="w-4 h-4" />
             </Button>
           </div>
         </div>
         <div className="col-span-3">
           <h1>What we do</h1>
           <ul className="mt-3 space-y-5">
-            <li className="cursor-pointer text-sm font-[400] ">Job Matching</li>
-            <li className="cursor-pointer text-sm font-[400]">
+            <li className="cursor-pointer text-sm font-[400] text-gray-300">
+              Job Matching
+            </li>
+            <li className="cursor-pointer text-sm font-[400] text-gray-300">
               Streamlined Application Process
             </li>
-            <li className="cursor-pointer text-sm font-[400]">
+            <li className="cursor-pointer text-sm font-[400] text-gray-300">
               Comprehensive Listings
             </li>
-            <li className="cursor-pointer text-sm font-[400]">
+            <li className="cursor-pointer text-sm font-[400] text-gray-300">
               Supportive Community
-            </li>
-            <li className="cursor-pointer text-sm font-[400]">
-              Responsive Service
             </li>
           </ul>
         </div>
         <div className="col-span-3">
           <h1>What we are</h1>
           <ul className="mt-3 space-y-5">
-            <li className="cursor-pointer text-sm font-[400] ">About us</li>
-            <li className="cursor-pointer text-sm font-[400]">Contact us</li>
-            <li className="cursor-pointer text-sm font-[400]">Privacy</li>
-            <li className="cursor-pointer text-sm font-[400]">Careers</li>
+            <li className="cursor-pointer text-sm font-[400] text-gray-300">
+              About us
+            </li>
+            <li className="cursor-pointer text-sm font-[400] text-gray-300">
+              Contact us
+            </li>
+            <li className="cursor-pointer text-sm font-[400] text-gray-300">
+              Privacy
+            </li>
+            <li className="cursor-pointer text-sm font-[400] text-gray-300">
+              Careers
+            </li>
           </ul>
         </div>
         <div className="col-span-3">
-          <h1>Use GiG place</h1>
+          <h1>
+            Use Gig<span className="text-yellow-500">place</span>
+          </h1>
           <ul className="mt-3 space-y-5">
-            <li className="cursor-pointer text-sm font-[400] ">Iphone</li>
-            <li className="cursor-pointer text-sm font-[400]">Andriod</li>
+            <li className="cursor-pointer text-sm font-[400] text-gray-300">
+              Iphone
+            </li>
+            <li className="cursor-pointer text-sm font-[400] text-gray-300">
+              Andriod
+            </li>
           </ul>
         </div>
         <div className="col-span-3">
           <h1>Need help?</h1>
           <ul className="mt-3 space-y-5">
-            <li className="cursor-pointer text-sm font-[400] ">Help center</li>
-            <li className="cursor-pointer text-sm font-[400]">Contact us</li>
-            <li className="cursor-pointer text-sm font-[400]">Download</li>
+            <li className="cursor-pointer text-sm font-[400] text-gray-300">
+              Help center
+            </li>
+            <li className="cursor-pointer text-sm font-[400] text-gray-300">
+              Contact us
+            </li>
+            <li className="cursor-pointer text-sm font-[400] text-gray-300">
+              Download
+            </li>
           </ul>
         </div>
       </div>
-      <div className="mt-10 border-t border-[#ffffff44] flex justify-between items-center pt-4">
-        <div className="flex items-center gap-7 font-[400]">
+      <div className="mt-10 border-t border-[#ffffff44] flex lg:flex-row flex-col justify-between items-center pt-4">
+        <div className="flex items-center gap-7 font-[400] text-gray-300">
           <p>{year} © GIG place</p>
           <p>Terms & Privacy Policy</p>
         </div>

@@ -2,8 +2,8 @@ import Image from "next/image";
 import smileOne from "../../../public/img/man-1.jpg";
 export const AboutSection = () => {
   return (
-    <div className="mt-5 flex justify-center  p-20">
-      <div className="w-[50%]">
+    <div className="mt-5 flex lg:flex-row flex-col lg:justify-center  lg:p-20 p-8">
+      <div className="lg:w-[50%]">
         <h1 className="text-[34px] text-center mb-5">
           <p className="flex items-center gap-2">
             {" "}
@@ -11,7 +11,7 @@ export const AboutSection = () => {
             <span className="text-yellow-600">us</span>
           </p>
         </h1>
-        <div className="w-[500px]">
+        <div className="lg:w-[500px]">
           <p className="font-[400] text-gray-800">
             Gig Place connects skilled and unskilled workers with job
             opportunities effortlessly. Our platform simplifies the application
@@ -27,7 +27,7 @@ export const AboutSection = () => {
           </p>
         </div>
       </div>
-      <div className="w-[500px] relative shadow-xl">
+      <div className="lg:w-[500px] relative shadow-xl lg:mt-0 mt-8">
         <Image
           className="w-full rounded-2xl opacity-90 "
           src={smileOne}

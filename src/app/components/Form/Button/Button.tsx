@@ -9,7 +9,7 @@ const Button = ({ children, variant = "primary" }: ButtonProps) => {
   let buttonStyles = "";
   switch (variant) {
     case "primary":
-      buttonStyles = "bg-white px-6 py-3 rounded-[30px] bg-yellow-500";
+      buttonStyles = "bg-white px-6 py-3 rounded-md bg-yellow-500";
       break;
     case "outline":
       buttonStyles =
@@ -20,7 +20,7 @@ const Button = ({ children, variant = "primary" }: ButtonProps) => {
       break;
     case "link":
       buttonStyles =
-        "bg-transparent text-white font-[400] hover:border-b border-yellow-500 duration-[0.2s]  ";
+        "bg-transparent text-white font-[600] hover:border-b border-yellow-500 duration-[0.2s]  ";
       break;
     default:
       break;
@@ -28,7 +28,7 @@ const Button = ({ children, variant = "primary" }: ButtonProps) => {
   return (
     <div>
       <button
-        className={`w-full flex justify-center items-center gap-3 ${buttonStyles}`}
+        className={` flex  text-start items-center gap-3 ${buttonStyles}`}
       >
         {children}
       </button>

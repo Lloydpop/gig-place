@@ -5,8 +5,8 @@ import playStore from "../../../public/img/play-store.svg";
 import Logo from "../components/Logo/Logo";
 export const DownloadSection = () => {
   return (
-    <div className=" flex justify-between">
-      <div className="w-[500px] relative">
+    <div className=" flex lg:flex-row flex-col   flex-col-reverse justify-between px-8">
+      <div className="lg:w-[500px] relative">
         <Image
           className="w-full opacity-90 "
           src={smileOne}
@@ -16,15 +16,15 @@ export const DownloadSection = () => {
           <Logo />
         </div>
       </div>
-      <div className="w-[50%]">
+      <div className="lg:w-[50%]">
         <h1 className="text-[34px] text-center mb-5">
-          <p className="flex items-center gap-2">
+          <p className="flex items-center gap">
             {" "}
-            <span className="text-primary"> Get</span>
-            <span className="text-yellow-600">Gig place</span>Now!
+            <span className="text-primary"> Get Gig</span>
+            <span className="text-yellow-600 mr-2">place</span>Now!
           </p>
         </h1>
-        <div className="w-[500px]">
+        <div className="lg:w-[500px]">
           <p className="font-[400] text-gray-800">
             Discover job opportunities instantly! Download Gig Place from the
             App Store or Google Play. Find your next gig in just a few taps!.
